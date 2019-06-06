@@ -1,0 +1,104 @@
+<!DOCTYPE HTML>
+<html>
+    <head>
+            <meta charset="UTF-8">
+            <link rel="stylesheet" type="text/css" href="./registration.css">
+    </head>
+    <body>
+        <h1>
+            <u>STUDENT REGISTRATION FORM</u>
+        </h1>
+        <div id = "main" class="main-container">
+            <form>
+                <br>
+                <b>FIRST NAME</b> <input id = "textBox1" type="text" name="FirstName"> <b>(max 30 characters a-z and A-Z)</b><br><br>
+                <b>LAST NAME</b> <input id = "textBox2" type="text" name="LastName"> <b>(max 30 characters a-z and A-Z)</b><br><br>    
+                <b>DATE OF BIRTH</b> 
+                <select id = "day">
+                    <option value = "Day">Day</option>
+                </select>
+                <select>
+                    <option value = "Month">Month</option>
+                </select>
+                <select>
+                    <option value = "Year">Year</option>
+                </select><br><br>
+                <b>EMAIL ID</b> <input id = "textBox3" class="left-margin-80x" type="text" name="Email"><br><br>
+                <b>MOBILE NUMBER</b> <input id = "textBox4" type="text" name="Mobile"> <b>(10 digit number)</b><br><br> 
+                <b>GENDER</b> <label for="Male" id = "label1">Male</label><input type="radio" id="Male" name="Gender">
+                <label for="Female">Female</label><input type="radio" id="Female" name="Gender"><br>
+                <div class="Address">
+                    <label for="textArea"><b>ADDRESS</b></label>
+                    <textarea id="textArea" class="left-margin-80x" name="textArea" rows=5 cols=28></textarea>
+                </div><br><br>
+                <b>CITY</b> <input id = "textBox5" type="text" name="City"> <b>(max 30 characters a-z and A-Z)</b><br><br>
+                <b>PINCODE</b> <input id = "textBox6" type="text" name="Pincode"> <b>(6 digit number)</b><br><br> 
+                <b>STATE</b> <input id = "textBox7" type="text" name="State"> <b>(max 30 characters a-z and A-Z)</b><br><br>
+                <b>COUNTRY</b> <input id = "textBox8" type="text" name="Country"><br><br> 
+                <b>HOBBIES</b> <label for="hobby1" id="label2">Drawing</label><input type="checkbox" name="hobby1" value="Drawing"> 
+                Singing<input type="checkbox" name="hobby2" value="Singing">
+                Dancing<input type="checkbox" name="hobby3" value="Dancing">
+                Sketching<input type="checkbox" name="hobby4" value="Sketching"><br>
+                <label for="hobby5" id="label3">Other</label><input type="checkbox" name="hobby5" value="Other">
+                <input id = "textBox9" type="text" name="Other"><br><br>
+                <div class="Qualification">
+                    <label for="table1" id="tableLabel"><b>QUALIFICATION</b></label>
+                    <table id="table1">
+                        <tr>
+                          <th>Sl.No.</th>
+                          <th>Examination</th>
+                          <th>Board</th>
+                          <th>Percentage</th>
+                          <th>Year of Passing</th>
+                        </tr>
+                        <tr>
+                          <td>1</td>
+                          <td>Class X</td>
+                          <td><input type="text"></td>
+                          <td><input type="text"></td>
+                          <td><input type="text"></td>
+                        </tr>
+                        <tr>
+                            <td>2</td>
+                            <td>Class XII</td>
+                            <td><input type="text"></td>
+                            <td><input type="text"></td>
+                            <td><input type="text"></td>
+                        </tr>
+                        <tr>
+                            <td>3</td>
+                            <td>Graduation</td>
+                            <td><input type="text"></td>
+                            <td><input type="text"></td>
+                            <td><input type="text"></td>    
+                        </tr>
+                        <tr>
+                            <td>4</td>
+                            <td>Masters</td>
+                            <td><input type="text"></td>
+                            <td><input type="text"></td>
+                            <td><input type="text"></td>
+                        </tr>
+                        <tr>
+                            <td></td>
+                            <td></td>
+                            <td>(10 Char Max)</td>
+                            <td>(upto 2 decimal)</td>
+                            <td></td>
+                        </tr>
+                    </table><br><br>                              
+                </div>
+                <b>COURSES<br>APPLIED FOR</b>
+                <label for="BCA" id = "label4">BCA</label><input type="radio" id="BCA" name="Courses">
+                <label for="B.Com">B.Com</label><input type="radio" id="B.Com" name="Courses">
+                <label for="B.Sc">B.Sc</label><input type="radio" id="B.Sc" name="Courses">
+                <label for="B.A">B.A</label><input type="radio" id="B.A" name="Courses"><br><br>
+                <div class="submitButtons">
+                    <input type="submit" value="Submit">
+                    <input type="reset" value="Reset">
+                </div>
+            </form>
+        </div>
+    </body>
+
+</html>
