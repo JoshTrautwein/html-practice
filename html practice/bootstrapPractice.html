@@ -1,0 +1,179 @@
+<!DOCTYPE HTML>
+<html>
+<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+<head>
+<meta charset="UTF-8">
+
+<title>Sample Checkout Form</title>
+
+</head>
+<body>
+
+<div class="container">
+    <div class="col mb-6">
+        <h5 class="text-center" style="font-family: 'Times New Roman', Times, serif">Sample Checkout Form using Bootstrap</h5>
+    </div>
+</div>
+<div class="container">
+    <div class="row">
+        <div class="col-lg-8 col-md-8 col-sm-8 col-xs-12 border-bottom border-light mb-3">
+            <div class="page-header">
+                <h5>Billing Address</h5>
+            </div>
+            <div class="form-row">
+                <div class="form-group col-6">
+                    <label for="first-name-input">First Name</label>
+                    <input type="name" class="form-control" id="first-name-input">
+                </div>
+                <div class="form-group col-6">
+                    <label for="last-name-input">Last Name</label>
+                    <input type="name" class="form-control" id="last-name-input">                
+                </div>
+            </div>
+            <div class="form-row">
+                <div class="form-group col-12">
+                    <label for="inlineFormInputGroup">Username</label>
+                    <label class="sr-only" for="inlineFormInputGroup">Username</label>
+                    <div class="input-group mb-2">
+                      <div class="input-group-prepend">
+                        <div class="input-group-text">@</div>
+                      </div>
+                      <input type="text" class="form-control" id="inlineFormInputGroup" placeholder="Username">
+                    </div>
+                </div>
+            </div>
+            <div class="form-group">
+                <label for="inputAddress">Address</label>
+                <input type="text" class="form-control" id="inputAddress" placeholder="1234 Main St">
+            </div>
+            <div class="form-group">
+                <label for="inputAddress2">Address 2</label>
+                <input type="text" class="form-control" id="inputAddress2" placeholder="Apartment, studio, or floor">
+            </div>
+            <div class="form-row">
+                <div class="form-group col-md-6">
+                    <label for="inputCountry">Country</label>
+                    <select class="form-control" id="inputCountry">
+                    <option selected>Choose...</option>
+                    <option>...</option>
+                    </select>
+                </div>
+                <div class="form-group col-md-4">
+                    <label for="inputState">State</label>
+                    <select id="inputState" class="form-control">
+                    <option selected>Choose...</option>
+                    <option>...</option>
+                    </select>
+                </div>
+                <div class="form-group col-md-2">
+                    <label for="inputZip">Zip</label>
+                    <input type="text" class="form-control" id="inputZip">
+                </div>
+            </div>
+        </div>
+        <div class="col-lg-4 col-md-4 col-sm-4 col-xs-12">
+            <h5 class = "text-secondary">Your Cart<span class="badge badge-pill badge-secondary float-right">3</span></h5>
+            <div class="card" style="width: 22rem;">
+                <ul class="list-group list-group-flush">
+                  <li class="list-group-item">
+                    <h6>Product Name<small class="float-right form-text text-muted">$12</small></h6>
+                    <small class="form-text text-muted">brief description</small>
+                  </li>
+                  <li class="list-group-item">
+                    <h6>Second Product<small class="float-right form-text text-muted">$8</small></h6>
+                    <small class="form-text text-muted">brief description</small>
+                  </li>
+                  <li class="list-group-item">
+                    <h6>Third Item<small class="float-right form-text text-muted">$5</small></h6>
+                    <small class="form-text text-muted">brief description</small>
+                  </li>
+                  <li class="list-group-item text-success">
+                    <h6>Promo Code<small class="float-right form-text text-success">-$5</small></h6>
+                    <small class="form-text text-success">EXAMPLECODE</small>
+                  </li>
+                    <li class="list-group-item">
+                        Total(USD)
+                        <h6 class="float-right">$20</h6>
+                    </li>
+                </ul>
+                <label class="sr-only" for="inlineFormInputGroup">Promo Code</label>
+            </div>
+            <div class="input-group mt-4 border p-2">
+                <input type="text" class="form-control" id="inlineFormInputGroup" placeholder="Promo Code">
+                <div class="input-group-append">
+                    <div class="input-group-text bg-secondary text-white">Redeem</div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="row">
+        <div class="col-lg-8 col-md-8 col-sm-8 col-xs-12 border-bottom border-light mb-3">
+            <div class="form-check">
+                <input class="form-check-input position-static" type="checkbox" id="blankCheckbox1" value="option1" aria-label="...">
+                <label class="form-check-label" for="blankCheckbox1">Shipping address is the same as my billing address</label>
+            </div>
+            <div class="form-check mb-3">
+                <input class="form-check-input position-static" type="checkbox" id="blankCheckbox2" value="option1" aria-label="...">
+                <label class="form-check-label" for="blankCheckbox2">Save this information for next time</label>
+            </div>
+        </div>
+    </div>
+    <div class="row">
+        <div class="col-lg-8 col-md-8 col-sm-8 col-xs-12 border-bottom border-light mb-3">
+            <h5>Payment</h5>
+            <div class="custom-control custom-radio">
+                <input type="radio" id="customRadio1" name="customRadio" class="custom-control-input">
+                <label class="custom-control-label" for="customRadio1">Credit card</label>
+            </div>
+            <div class="custom-control custom-radio">
+                <input type="radio" id="customRadio2" name="customRadio" class="custom-control-input">
+                <label class="custom-control-label" for="customRadio2">Debit card</label>
+            </div>
+            <div class="custom-control custom-radio">
+                <input type="radio" id="customRadio3" name="customRadio" class="custom-control-input">
+                <label class="custom-control-label" for="customRadio3">PayPal</label>
+            </div>
+            <div class="form-row mt-3">
+                <div class="form-group col-6">
+                    <label for="card-name-input">Name on card</label>
+                    <input type="name" id="card-name-input" class="form-control" aria-describedby="creditCardHelpBlock">
+                    <small id="creditCardHelpBlock" class="form-text text-muted">
+                        Full name as displayed on card
+                    </small>
+                </div>
+                <div class="form-group col-6">
+                    <label for="card-number-input">Credit card number</label>
+                    <input type="number" class="form-control" id="card-number-input">                
+                </div>
+            </div>
+            <div class="form-row">
+                <div class="form-group col-3">
+                    <label for="card-expiration-input">Expiration</label>
+                    <input type="number" class="form-control" id="card-expiration-input">                    
+                </div>
+                <div class="form-group col-3">
+                    <label for="card-cvv-input">CVV</label>
+                    <input type="number" class="form-control" id="card-cvv-input">                    
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="row">
+        <div class="col-lg-8 col-md-8 col-sm-8 col-xs-12 mb-3">
+            <button type="submit" class="btn btn-primary col-12">Continue to checkout</button>
+        </div>
+    </div>
+</div>
+<div class="container mt-6">
+    <div class="col">
+        <small class="form-text text-muted text-center">
+            @ 2017-2019 Company Name<br> <a href="#">Privacy</a> <a href="#">Terms</a> <a href="#">Support</a>
+        </small>
+    </div>
+</div>
+
+<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+</body>
+</html>
